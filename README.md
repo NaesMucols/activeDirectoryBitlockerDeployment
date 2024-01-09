@@ -4,7 +4,7 @@ This repository will have some supporting documents to deploy Bitlocker Drive En
 
 ---------------------------------------------------------------------------------------------------
  
-  || BDE Policies and Scripts ||
+## BDE Policies and Scripts
 
 Author:   Sean C. Slocum, II
 Created:  01-08-2024
@@ -13,14 +13,14 @@ Synopsis: I created this document to make My job easier
 Description: This document should outline the different files in this directory and their 
              purposes. This document will also mention the sources that I used during this 
              project. 
-
+### Table of contents
 1. Sources and people who helped me.
 2. List of files and their purpose.
 3. GPO's (There are two GPO's, unless you want to consolidate. I didn't)
 4. Designed use. 
 
 
-  || Water Hazards ||
+## Water Hazards
 
 1. I do NOT take responsibility for anything that happens, good or bad, to your network because of 
    these scripts. READ them with your own eyes, every line of code. I haven't been writing 
@@ -40,7 +40,7 @@ Description: This document should outline the different files in this directory 
 ---------------------------------------------------------------------------------------------------
 
 
-  || 1. Sources and people who helped me ||
+## Sources and people who helped me
 
 Sean Jr. on Youtube (No Relation, I promise.)
  - Sean's video directed me largely through this process. 
@@ -61,7 +61,7 @@ Fabozzi.net
 ---------------------------------------------------------------------------------------------------
 
 
-  || 2. List of files and their purpose ||
+## List of files and their purpose
 
 EnablingBitLocker.bat
  - Provided by Sean Jr. 
@@ -88,10 +88,10 @@ spiceWorksExample.ps1
 ---------------------------------------------------------------------------------------------------
 
 
-  || 3. GPO's (There are two GPO's, unless you want to consolidate. I didn't) ||
+## GPO's (There are two GPO's, unless you want to consolidate. I didn't)
 
-| GPO 1 - BDE Key Backup |
-   *User Configuration Disabled*
+### GPO 1 - BDE Key Backup 
+ *User Configuration Disabled*
 
 Description: This GPO will create a scheduled task that will check monthly for new BDE Keys. 
              (Think: you have Bitlocker ToGo enabled)
@@ -129,7 +129,7 @@ Options:
     - If the task is already running, then the following rule applies:  IgnoreNew 
 
 
-| GPO 2 - Part 1 - BDE Policy and Script |
+### GPO 2 - Part 1 - BDE Policy and Script
    *User Configuration Disabled*
 
 Description: There's a couple parts to this GPO. There are 3 configuration templates and a
@@ -181,7 +181,7 @@ Options:
        - Select the encryption type: Used Space Only encryption
 
 
-| GPO 2 - Part 2 - BDE Policy and Script |
+ ### GPO 2 - Part 2 - BDE Policy and Script
 
 Setting Location - Scheduled task: Computer Configuration > Preferences > Control Panel Settings
                                   > Scheduled Tasks > 
@@ -215,7 +215,7 @@ Options:
 
 
 
-  || 3. Designed use. ||
+## Designed use 
 
 These documents are meant to be used as guidance. Do NOT copy and paste anything unless you've 
 verified that it's compatible with your network and systems. I've only tested these policies 
