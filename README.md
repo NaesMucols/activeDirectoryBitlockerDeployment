@@ -33,6 +33,8 @@ Description: This document should outline the different files in this directory 
    - I created a test OU and put windows 10 and 11 VMs in that OU. It worked for me and helped me 
      see how Bitlocker Drive Encription works.
 
+- Make sure you read the scripts and input your local network information before running or scheduling them.
+
 - The likelyhood of me being able to help you diagnose any problems are slim. 
    - See: "It works on my machine".
 
