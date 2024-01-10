@@ -6,10 +6,10 @@ This repository will have some supporting documents to deploy Bitlocker Drive En
  
 ## BDE Policies and Scripts
 
-Author:   Sean C. Slocum, II
-Created:  01-08-2024
-Modified: 01-09-2024
-Synopsis: I created this document to make My job easier
+Author:   Sean C. Slocum, II <br/>
+Created:  01-08-2024 <br/>
+Modified: 01-09-2024 <br/>
+Synopsis: I created this document to make My job easier <br/>
 Description: This document should outline the different files in this directory and their 
              purposes. This document will also mention the sources that I used during this 
              project. 
