@@ -67,6 +67,7 @@ EnablingBitLocker.bat
  - Provided by Sean Jr. 
  - This will enable BDE. 
  - Designed to be scheduled and stored in a hidden share.
+ - I haven't modified this file.
 
 GENERIC_BDE_AD_Backup_v1.22.ps1
  - Made by me.
@@ -82,7 +83,8 @@ GENERIC_Bitlocker_Report_v1.54.ps1
 
 spiceWorksExample.ps1
  - Made by Martin Pugh
- - The purpose of this is to show important PS Scripts that I learned from.
+ - The purpose of this is to show important PS Scripts that I learned from..
+ - I haven't modified this file.
 
 
 ---------------------------------------------------------------------------------------------------
