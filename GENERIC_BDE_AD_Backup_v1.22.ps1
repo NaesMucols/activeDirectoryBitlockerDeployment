@@ -86,7 +86,7 @@ if ([version](Get-CimInstance -ClassName Win32_OperatingSystem).Version -ge [ver
             Add-BitLockerKeyProtector -MountPoint $env:SystemDrive -RecoveryPasswordProtector -ErrorAction Stop
             Enable-BitLocker -MountPoint $env:SystemDrive -TpmProtector -EncryptionMethod XtsAes256 -UsedSpaceOnly -ErrorAction Stop
         } catch {
-            Write-Output "BitLocker encryption could not be enabled, see error below. `nLast Exit Code: $lastExitCode" $_ | Out-File S:\Projects\Monitoring and Security\BitLocker\BitLockerError.txt
+            Write-Output "BitLocker encryption could not be enabled, see error below. `nLast Exit Code: $lastExitCode" $_ | Out-File <File location>
         }
     # IF THE VOLUME IS ALREADY ENCRYPTED THEN IT WILL TRY TO BACKUP THE BDE KEYS TO AD
     } else {
@@ -99,7 +99,7 @@ if ([version](Get-CimInstance -ClassName Win32_OperatingSystem).Version -ge [ver
             # The code below backups the key to Azure Active Directory. Will fail if AD isn't hybrid mode or Local.
             ## BackupToAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryKey.KeyProtectorID
         } catch {
-            Write-Output "BitLocker encryption key could not be backed up, see error below. `nLast Exit Code: $lastExitCode" $_ | Out-File 'S:\Projects\Monitoring and Security\BitLocker\BitLockerError.txt'
+            Write-Output "BitLocker encryption key could not be backed up, see error below. `nLast Exit Code: $lastExitCode" $_ | Out-File <File location>
         }
     }
 }
