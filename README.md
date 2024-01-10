@@ -22,25 +22,25 @@ Description: This document should outline the different files in this directory 
 
 ## Water Hazards
 
-1. I do NOT take responsibility for anything that happens, good or bad, to your network because of 
-   these scripts. READ them with your own eyes, every line of code. I haven't been writing 
-   powershell for 10 years or even 10 months. Update and change these scripts how you see fit. 
+- I do NOT take responsibility for anything that happens, good or bad, to your network because of 
+  these scripts. READ them with your own eyes, every line of code. I haven't been writing 
+  powershell for 10 years or even 10 months. Update and change these scripts how you see fit. 
 
-2. You CAN lock out every computer on your network if you're not careful. I tested that "feature" 
-   with a few VMs in a test OU. 
+- You CAN lock out every computer on your network if you're not careful. I tested that "feature" 
+  with a few VMs in a test OU. 
 
-3. Ignorance and disregard for testing can end in catastrophic failure. 
-    - I created a test OU and put windows 10 and 11 VMs in that OU. It worked for me and helped me 
-      see how Bitlocker Drive Encription works.
+- Ignorance and disregard for testing can end in catastrophic failure. 
+   - I created a test OU and put windows 10 and 11 VMs in that OU. It worked for me and helped me 
+     see how Bitlocker Drive Encription works.
 
-4. The likelyhood of me being able to help you diagnose any problems are slim. 
-    - See: "It works on my machine".
+- The likelyhood of me being able to help you diagnose any problems are slim. 
+   - See: "It works on my machine".
 
 
 ---------------------------------------------------------------------------------------------------
 
 
-## Sources and people who helped me
+## 1. Sources and people who helped me
 
 Sean Jr. on Youtube (No Relation, I promise.)
  - Sean's video directed me largely through this process. 
@@ -61,7 +61,7 @@ Fabozzi.net
 ---------------------------------------------------------------------------------------------------
 
 
-## List of files and their purpose
+## 2. List of files and their purpose
 
 EnablingBitLocker.bat
  - Provided by Sean Jr. 
@@ -88,7 +88,7 @@ spiceWorksExample.ps1
 ---------------------------------------------------------------------------------------------------
 
 
-## GPO's (There are two GPO's, unless you want to consolidate. I didn't)
+## 3. GPO's (There are two GPO's, unless you want to consolidate. I didn't)
 
 ### GPO 1 - BDE Key Backup 
  *User Configuration Disabled*
@@ -211,11 +211,9 @@ Options:
     - Allow task to be run on demand:  Yes   
     - Stop task if it runs longer than:  3 days   
     - If the running task does not end when requested, force it to stop:  No   
-    - If the task is already running, then the following rule applies:  IgnoreNew 
+    - If the task is already running, then the following rule applies:  IgnoreNew
 
-
-
-## Designed use 
+## 4. Designed use 
 
 These documents are meant to be used as guidance. Do NOT copy and paste anything unless you've 
 verified that it's compatible with your network and systems. I've only tested these policies 
